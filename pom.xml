@@ -52,6 +52,7 @@
   </dependencyManagement>
   <modules>
     <module>tika-core-shaded</module>
+    <module>tika-langdetect-optimaize-shaded</module>
     <module>tika-parsers-standard-package-shaded</module>
   </modules>
 </project>
