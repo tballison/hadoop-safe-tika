@@ -25,14 +25,14 @@
 <parent>
     <groupId>org.tallison.tika</groupId>
     <artifactId>hadoop-safe-tika</artifactId>
-    <version>2.9.1-SNAPSHOT</version>
+    <version>2.9.0.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.tallison.tika</groupId>
   <artifactId>tika-parsers-standard-package-shaded</artifactId>
-  <version>2.9.1-SNAPSHOT</version>
+  <version>2.9.0.0</version>
 
   <dependencies>
     <dependency>
@@ -47,6 +47,10 @@
         <exclusion>
           <groupId>xml-apis</groupId>
           <artifactId>xml-apis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>commons-io</groupId>
+          <artifactId>commons-io</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -102,19 +106,10 @@
                     <exclude>README</exclude>
                     <exclude>builddef.lst</exclude>
                     <exclude>module-info</exclude>
-                    <!-- clutter not needed in jar -->
-                    <exclude>resources/grib1/nasa/README*.pdf</exclude>
-                    <exclude>resources/grib1/**/readme*.txt</exclude>
-                    <exclude>resources/grib2/**/readme*.txt</exclude>
-                    <!-- TIKA-763: Workaround to avoid including LGPL classes -->
-                    <exclude>ucar/nc2/iosp/fysat/Fysat*.class</exclude>
-                    <exclude>ucar/nc2/dataset/transform/VOceanSG1*class</exclude>
-                    <exclude>ucar/unidata/geoloc/vertical/OceanSG*.class</exclude>
                     <!-- https://issues.apache.org/jira/browse/TIKA-3650-->
                     <exclude>javax/**/*</exclude>
                     <!-- no idea why this is packaged as a jar within a jar -->
                     <exclude>rome-utils-2.1.0.jar</exclude>
-
                   </excludes>
                 </filter>
               </filters>
