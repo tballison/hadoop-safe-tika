@@ -1,5 +1,5 @@
 This is a temporary shim that allows recent versions of Apache Tika
-to be run by Hadoop.
+to be run by Hadoop. This artifact is custom-built for Nutch.
 
 The major issue is that Tika and Apache POI use recent versions and features of commons-io,
 and this has to be shaded to work with Hadoop.
