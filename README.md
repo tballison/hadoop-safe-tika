@@ -8,6 +8,6 @@ We also have to strip out xerces and xml-apis.
 
 See https://github.com/apache/nutch/pull/776
 
-The versioning follows the pattern for tika's docker image: regular semver 2.9.3 (Tika's version) 
-and then an extra digit to track the version of the shim, e.g. 2.9.3.1 would be the second release of the shim that 
-works with Tika 2.9.3
+The versioning follows the pattern for tika's docker image: regular semver 3.1.0 (Tika's version) 
+and then an extra digit to track the version of the shim, e.g. 3.1.0.1 would be the second release of the shim that 
+works with Tika 3.1.0
