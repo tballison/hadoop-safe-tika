@@ -25,14 +25,14 @@
 <parent>
     <groupId>org.tallison.tika</groupId>
     <artifactId>hadoop-safe-tika</artifactId>
-    <version>2.9.1.0</version>
+    <version>2.9.3.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.tallison.tika</groupId>
   <artifactId>tika-parsers-standard-package-shaded</artifactId>
-  <version>2.9.1.0</version>
+  <version>2.9.3.0</version>
 
   <dependencies>
     <dependency>
