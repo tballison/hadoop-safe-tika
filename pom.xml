@@ -26,13 +26,13 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>30</version>
+    <version>33</version>
     <relativePath/>
   </parent>
 
   <groupId>org.tallison.tika</groupId>
   <artifactId>hadoop-safe-tika</artifactId>
-  <version>2.9.1.0</version>
+  <version>2.9.3.0</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -40,8 +40,8 @@
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
-    <maven.shade.version>3.5.1</maven.shade.version>
-    <tika.version>2.9.1</tika.version>
+    <maven.shade.version>3.6.0</maven.shade.version>
+    <tika.version>2.9.3</tika.version>
   </properties>
   <developers>
     <developer>
@@ -66,7 +66,7 @@
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-bom</artifactId>
-        <version>2.21.1</version>
+        <version>2.24.3</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -99,7 +99,7 @@
 
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.1.3</version>
         <configuration>
           <skip>true</skip> <!-- No need to deploy the reactor -->
         </configuration>
@@ -107,7 +107,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
@@ -121,7 +121,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.11.2</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -134,7 +134,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.7</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
