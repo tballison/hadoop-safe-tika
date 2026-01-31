@@ -1,4 +1,3 @@
-package org.tallison.tika.core;
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -14,6 +13,13 @@ package org.tallison.tika.core;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+package org.tallison.tika.core;
+
+/**
+ * Placeholder class for shaded tika-core module.
+ * This module repackages Apache Tika Core with relocated dependencies
+ * for use in Hadoop environments where dependency conflicts may occur.
  */
 public class Main {
     public static void main(String[] args) {

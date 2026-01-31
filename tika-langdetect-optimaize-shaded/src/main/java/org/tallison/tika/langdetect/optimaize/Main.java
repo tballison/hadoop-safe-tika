@@ -1,4 +1,3 @@
-package org.tallison.tika.langdetect.optimaize;
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -15,7 +14,13 @@ package org.tallison.tika.langdetect.optimaize;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.tallison.tika.langdetect.optimaize;
 
+/**
+ * Placeholder class for shaded tika-langdetect-optimaize module.
+ * This module repackages Apache Tika language detection with relocated dependencies
+ * for use in Hadoop environments where dependency conflicts may occur.
+ */
 public class Main {
     public static void main(String[] args) {
         //System.out.println("Hello world!");

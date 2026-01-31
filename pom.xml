@@ -34,6 +34,9 @@
   <artifactId>hadoop-safe-tika</artifactId>
   <version>3.2.3.0</version>
   <packaging>pom</packaging>
+  <name>Hadoop Safe Tika</name>
+  <description>Shaded Apache Tika jars for use in Hadoop environments</description>
+  <url>https://github.com/tballison/hadoop-safe-tika</url>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>

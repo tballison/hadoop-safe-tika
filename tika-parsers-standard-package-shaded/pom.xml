@@ -33,6 +33,8 @@
   <groupId>org.tallison.tika</groupId>
   <artifactId>tika-parsers-standard-package-shaded</artifactId>
   <version>3.2.3.0</version>
+  <name>Tika Parsers Standard Package Shaded</name>
+  <description>Shaded Apache Tika parsers for Hadoop environments</description>
 
   <dependencies>
     <dependency>
@@ -149,13 +151,6 @@
           </execution>
         </executions>
 
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
