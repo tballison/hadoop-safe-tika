@@ -164,6 +164,18 @@
           <autoPublish>false</autoPublish>
         </configuration>
       </plugin>
+      <!-- Disable nexus-staging-maven-plugin inherited from Apache parent pom -->
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <extensions>false</extensions>
+        <executions>
+          <execution>
+            <id>injected-nexus-deploy</id>
+            <phase>none</phase>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
